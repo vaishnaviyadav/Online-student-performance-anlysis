@@ -1,0 +1,28 @@
+<html>
+<head>
+<link href="{{url_for('static',filename='stylesheets/style.css')}}" rel="stylesheet">
+</head>
+<body>
+
+<div class="Image">
+<div class="backimage">
+   </div>
+
+
+<div class="Form">
+<form action = "{{url_for('predict')}}" method = "POST">
+  
+   <p>Grade 1 : <input type = "text" name = "Grade 1" ,placeholder="g1"/></p>
+   <p>Grade 2 : <input type = "text" name = "Grade 2" /></p>
+   <p>Grade 3 : <input type = "text" name = "Grade 3" /></p>
+   <p>Failures : <input type ="text" name = "failures" /></p>
+   <p>Absence : <input type = "text" name = "absence" /></p>
+   <p>studytime : <input type = "text" name = "studytime" /></p>
+   <p>traveltime : <input type = "text" name = "traveltime" /></p>
+   <p><input type = "submit" value = "submit" /></p>
+</form>
+ {{ prediction_text }}
+</div></div>
+</body>
+ 
+</html>
